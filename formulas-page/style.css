@@ -1,0 +1,10 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #F4E3B2;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #CF5C36;
+}
