@@ -18,37 +18,51 @@
   <body>
     <h1>FORMULA PICKER</h1>
 
-    <!-- <div class="main-div">
-      <h2 id="headers">Areas</h2>
-      <div class="areas-container"></div>
-    </div> -->
+    <h2 class="area-header">AREA</h2>
 
-    <div class="tab-nav-container">
-      <div class="tab active">
-        <p>Square</p>
+    <div class="area">
+      <!-- square -->
+      <div id="square">
+        <h3>Square</h3>
+        <p>Area = length<sup>2</sup></p>
+        <input type="number" placeholder="Enter length" id="sq-len" />
+        <button class="sq-calc" onclick="square()">Submit</button>
+        <p>Area = <span id="sq-area">___</span></p>
       </div>
-
-      <div class="tab">
-        <p>Rectangle</p>
+      <!-- rectangle-->
+      <div id="rectangle">
+        <h3>Rectangle</h3>
+        <p>Area = length x width</p>
+        <input type="number" placeholder="Enter length" id="rec-len" />
+        <input type="number" placeholder="Enter width" id="rec-wid" />
+        <button class="rec-calc" onclick="rectangle()">Submit</button>
+        <p>Area = <span id="rec-area">___</span></p>
       </div>
-      <div class="tab">
-        <p>Triangle</p>
+      <!-- triangle -->
+      <div id="triangle">
+        <h3>Triangle</h3>
+        <p>Area = 1/2 x base x height</p>
+        <input type="number" placeholder="Enter base" id="tri-base" />
+        <input type="number" placeholder="Enter height" id="tri-hght" />
+        <button class="tri-calc" onclick="triangle()">Submit</button>
+        <p>Area = <span id="tri-area">___</span></p>
       </div>
-      <div class="tab">
-        <p>Rhombus</p>
+      <!-- circle -->
+      <div id="circle">
+        <h3>Circle</h3>
+        <p>Area = &#960;r<sup>2</sup></p>
+        <input type="number" placeholder="Enter radius" id="cir-rad" />
+        <button class="cir-calc" onclick="circle()">Submit</button>
+        <p>Area = <span id="cir-area">___</span></p>
       </div>
-      <div class="tab">
-        <p>Circle</p>
-      </div>
-      <div class="tab">
-        <p>Cone</p>
-      </div>
-      <div class="tab">
-        <p>Sphere</p>
-      </div>
-      <div class="tab">
-        <p>Cube</p>
-      </div>
+      <!-- square -->
+      <div id="cube"><h3>Cube</h3></div>
+      <!-- cone -->
+      <div id="cone"><h3>Cone</h3></div>
+      <!-- sphere -->
+      <div id="sphere"><h3>Sphere</h3></div>
+      <!-- cube-->
+      <div id="sphere"><h3>Cube</h3></div>
     </div>
 
     <script src="script.js"></script>
