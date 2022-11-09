@@ -55,14 +55,41 @@
         <button class="cir-calc" onclick="circle()">Submit</button>
         <p>Area = <span id="cir-area">___</span></p>
       </div>
-      <!-- square -->
-      <div id="cube"><h3>Cube</h3></div>
       <!-- cone -->
-      <div id="cone"><h3>Cone</h3></div>
+      <div id="cone">
+        <h3>Cone</h3>
+        <p>Area = &#960;r x s</p>
+        <input type="number" placeholder="Enter radius(r)" id="cone-rad" />
+        <input type="number" placeholder="Enter slant(s)" id="cone-slant" />
+        <button class="cone-calc" onclick="cone()">Submit</button>
+        <p>Area = <span id="cone-area">___</span></p>
+      </div>
       <!-- sphere -->
-      <div id="sphere"><h3>Sphere</h3></div>
+      <div id="sphere">
+        <h3>Sphere</h3>
+        <p>Area = 4&#960;r<sup>2</sup></p>
+        <input type="number" placeholder="Enter radius(r)" id="sphe-rad" />
+        <button class="sphe-calc" onclick="sphere()">Submit</button>
+        <p>Area = <span id="sphe-area">___</span></p>
+      </div>
       <!-- cube-->
-      <div id="sphere"><h3>Cube</h3></div>
+      <div id="cube">
+        <h3>Cube</h3>
+        <p>Area = 6a<sup>2</sup></p>
+        <input type="number" placeholder="Enter edge length(a)" id="cube-len" />
+        <button class="cube-calc" onclick="cube()">Submit</button>
+        <p>Area = <span id="cube-area">___</span></p>
+      </div>
+
+      <!-- <div id="box">
+        <h3>Box</h3>
+        <p>Area = length x width x height</p>
+        <input type="number" placeholder="Enter length(l)" id="box-len" />
+        <input type="number" placeholder="Enter width(w)" id="box-wid" />
+        <input type="number" placeholder="Enter height(h)" id="box-hght" />
+        <button class="box-calc" onclick="box()">Submit</button>
+        <p>Area = <span id="box-area">___</span></p>
+      </div> -->
     </div>
 
     <script src="script.js"></script>
