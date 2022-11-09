@@ -29,17 +29,14 @@ h3 {
     border-top: 5px solid #e76f51;
 }
 
-/* #square {
-    display: flex;
-    flex-direction: column;
-}
-#rectangle {
-    display:flex;
-    flex-direction: column;
-} */
-
 .area-container div {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #2a8d8f;
+    border: 2px solid #e76f51;
+
 }
+
+
