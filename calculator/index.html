@@ -10,30 +10,47 @@
   <body>
     <h1>Calculator</h1>
 
+    <!-- Calculator display -->
+
     <div class="display">
       <span id="disp-content"></span>
     </div>
 
+    <!-- Calculator Buttons -->
+
     <container class="calc-container">
-      <div id="top-row">
-        <button class="numBtn">1</button>
-        <button class="numBtn">2</button>
-        <button class="numBtn">3</button>
+      <div id="top-top-row">
+        <button class="numBtn" id="clearBtn" onclick="f(this.value)">C</button>
+        <button class="numBtn" id="leftParenBtn" onclick="f(this.value)">(</button>
+        <button class="numBtn" id="rightParenBtn" onclick="f(this.value)">)</button>
+        <button class="numBtn" id="divideBtn" onclick="f(this.value)">&divide;</button>
       </div>
-      <div id="mid-row">
-        <button class="numBtn">4</button>
-        <button class="numBtn">5</button>
-        <button class="numBtn">6</button>
+      <div id="top-mid-row">
+        <button class="numBtn" id="btn1" value="1" onclick="f(this.value)">1</button>
+        <button class="numBtn" id="btn2" value="2" onclick="f(this.value)">2</button>
+        <button class="numBtn" id="btn3" value="3" onclick="f(this.value)">3</button>
+        <button class="numBtn" id="multiplyBtn" onclick="f(this.value)">x</button>
+      </div>
+      <div id="mid-top-row">
+        <button class="numBtn" id="btn4" value="4" onclick="f(this.value)">4</button>
+        <button class="numBtn" id="btn5" value="5" onclick="f(this.value)">5</button>
+        <button class="numBtn" id="btn6" value="6" onclick="f(this.value)">6</button>
+        <button class="numBtn" id="minusBtn" onclick="f(this.value)">-</button>
+      </div>
+      <div id="mid-bot-row">
+        <button class="numBtn" id="btn7" value="7" onclick="f(this.value)">7</button>
+        <button class="numBtn" id="btn8" value="8" onclick="f(this.value)">8</button>
+        <button class="numBtn" id="btn9" value="9" onclick="f(this.value)">9</button>
+        <button class="numBtn" id="plusBtn" onclick="f(this.value)">+</button>
       </div>
       <div id="bot-row">
-        <button class="numBtn">7</button>
-        <button class="numBtn">8</button>
-        <button class="numBtn">9</button>
-      </div>
-      <div id="zeroBtn">
-        <button class="numBtn">0</button>
+        <button class="numBtn" id="pos-neg-btn" onclick="f(this.value)">+/-</button>
+        <button class="numBtn" id="btn0" value="0" onclick="f(this.value)">0</button>
+        <button class="numBtn" id="dotBtn" onclick="f(this.value)">.</button>
+        <button class="numBtn" id="equalBtn" onclick="f(this.value)">=</button>
       </div>
     </container>
+
     <script src="script.js"></script>
   </body>
 </html>
