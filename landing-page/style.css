@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: left;
+    background-color: #2a9d8f;
+    overflow: hidden;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: #264653;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #264653;
+    color: #2A9D8F;
+}

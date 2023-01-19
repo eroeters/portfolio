@@ -1,10 +1,7 @@
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: #9A8C98;
     text-align: center;
+    margin: 0;
 }
 
 h1 {
@@ -37,3 +34,26 @@ button {
     cursor: pointer;
 }
 
+
+.navbar {
+    display: flex;
+    align-items: left;
+    background-color: #2a9d8f;
+    overflow: hidden;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: #264653;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #264653;
+    color: #2A9D8F;
+}

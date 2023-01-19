@@ -30,4 +30,28 @@ class Calculator {
     }
 }
 
+clear() {
+    this.current
+}
+
+delete() {
+
+}
+
+appendNumber(number) {
+
+}
+
+chooseOperation(operation) {
+
+}
+
+compute() {
+
+}
+
+updateDisplay() {
+
+}
+
 
