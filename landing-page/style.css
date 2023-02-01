@@ -1,10 +1,11 @@
 body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
+/* navbar */
+
 .navbar {
-    display: flex;
-    align-items: left;
     background-color: #2a9d8f;
     overflow: hidden;
     padding-left: 10px;
@@ -23,4 +24,55 @@ body {
 .navbar a:hover {
     background-color: #264653;
     color: #2A9D8F;
+}
+/* navbar end */
+
+.aboutMeImg {
+    height: 100%;
+    width: auto;
+    padding: 2rem;
+}
+.h1-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #264653;
+    height: 33vh;
+    color: white;
+}
+
+.aboutMeContent {
+    width: 25%;
+}
+
+/* main content */
+.main-content {
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+}
+
+
+/* footer */
+.footer {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    padding-left: 20px;
+    width: 100%;
+    height: 45px;
+    margin-top: 20px;
+    background-color: black;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer img {
+    height: 2rem;
+    width: auto;
 }
