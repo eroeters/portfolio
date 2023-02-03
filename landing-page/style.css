@@ -10,6 +10,11 @@ body {
     overflow: hidden;
     padding-left: 10px;
     font-weight: bold;
+    background-image: url(/profilepic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 20%;
+    height: 500px;
 }
 
 .navbar a {
@@ -27,11 +32,11 @@ body {
 }
 /* navbar end */
 
-.aboutMeImg {
+/* .aboutMeImg {
     height: 100%;
     width: auto;
     padding: 2rem;
-}
+} */
 .h1-div {
     display: flex;
     justify-content: center;
