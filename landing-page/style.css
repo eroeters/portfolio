@@ -46,8 +46,9 @@ body {
 }
 
 /* main content */
-.main-content {
-
+.main-content-container {
+    display: flex;
+    
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 10px;
