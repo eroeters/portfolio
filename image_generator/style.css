@@ -1,0 +1,54 @@
+body {
+    background-color: aliceblue;
+}
+
+#imageDiv {
+    width: 50%;
+    background-color: blue;
+}
+
+#styleDvi {
+    width: 50%;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+}
+
+#styleContainer {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* #accessorizeSection {
+
+} */
+
+/* Btn Styling */
+
+.styleBtn {
+    color:rgb(141, 141, 255);
+    border: 1px solid rgb(141, 141, 255);
+    border-radius: 20px;
+    height: 40px;
+    min-width: 60px;
+}
+
+.styleBtn:hover {
+    border: 1px solid rgb(0, 102, 255);
+}
+
+.styleBtn:active {
+    background-color: rgb(0, 102, 255);
+    color: aliceblue;
+}
+
+/* Preview Window Styling */
+
+#previewDiv {
+    width: 300px;
+    height: 400px;
+    background-color: blue;
+}
