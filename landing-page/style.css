@@ -38,7 +38,7 @@ body {
     align-items: center;
     background-color: #264653;
     height: 33vh;
-    color: white;
+    color: #F0EDE5;
 }
 
 .aboutMeContent {
@@ -48,7 +48,8 @@ body {
 /* main content */
 .main-content-container {
     display: flex;
-    
+    background-color: #F0EDE5;
+    color: #333333;
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 10px;
