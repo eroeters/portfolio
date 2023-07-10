@@ -33,11 +33,13 @@ var createSeries = function(columnNumber, name) {
 
     //calculate % for tooltip
 
-    var val = winLossData[i][columnNumber] * 100;
+    var val = winlossData[i][columnNumber] * 100;
     if (columnNumber == 0) {
-        var percentValue = val / (winlossData[i][columnNumber] + winlossData[i][columnNumber + 1])
+        var percentValue = 
+            val / (winlossData[i][columnNumber] + winlossData[i][columnNumber + 1]);
     } else {
-        var percentValue = val / (winlossData[i][columnNumber] + winlossData[i][columnNumber - 1])
+        var percentValue = 
+            val / (winlossData[i][columnNumber] + winlossData[i][columnNumber - 1])
     }
     percentValue = percentValue.toFixed(2);
 
@@ -48,38 +50,41 @@ var createSeries = function(columnNumber, name) {
                 x: winlossData[i][2],
                 low: center,
                 high: center + value,
-                value: value
+                value: value,
+                percentValue: percentValue
             });
         } else {
             data.push({
                 x: winlossData[i][2],
                 low: -center,
                 high: -center - value,
-                value: value    
+                value: value,    
+                percentValue: percentValue
             });
         }
     }
     var series = chart.rangeBar(data);
-    series.name(name).stroke("3 #fff 1");
+    series.name(name).stroke("3 #fff 1").selectionMode("none");
 };
 
 
     createSeries(0, "Losses");
     createSeries(1, "Wins");
 
+    //chart title
     chart
         .title()
         .enabled(true)
         .text("20 Yeras of LA LAkers Win-Loss Receord With Kobe Bryant");
+
+    //chart legend
     chart
         .legend()
         .enabled(true);
 
     chart.yScale().stackMode("value");
-    chart.container("container");
-    chart.draw();
 
-    //chart styling
+    //chart styling x axis
     chart
         .xAxis()
         .ticks(false);
@@ -89,16 +94,55 @@ var createSeries = function(columnNumber, name) {
         .enabled(true)
         .text("Years")
         .padding([0, 0, 10, 0]);
+    chart  
+        .xAxis()
+        .labels()
+        .fontSize(11)
+        .fontColor("#474747")
+        .padding([0, 10, 0, 0]);
+
+    //chart styling y Axis
     chart
         .yAxis(0)
         .labels()
         .format(function() {
             return Math.abs(this.value);
         });
+
+    // create line marker at 0
     chart
         .lineMarker()
         .value(0)
         .stroke("#CECECE");
-    
 
+    //customize tooltip
+    chart
+        .tooltip()
+        .useHtml(true)
+        .fontSize(12)
+        .titleFormat(function() {
+            return this.getData("x") + " " + this.seriesName;
+        })
+        .format(function () {
+            return (
+              "<h6 style='font-size:12px; font-weight:400; margin: 0.25rem 0;'>Total games: " +
+              "<b>" +
+              this.getData("value") +
+              "</b></h6>" +
+              "<h6 style='font-size:12px; font-weight:400; margin: 0.25rem 0;'>Percentage games: " +
+              "<b>" +
+              this.getData("percentValue") +
+              " %</b></h6>"
+            );
+            });
+        //custom color palette
+        chart.palette(
+            anychart.palettes.distinctColors().items(["#FDB827", "#542583"])
+        );
+
+        //set a container id for the chart
+        chart.container("container");
+
+        //draw chart
+        chart.draw();
 });
