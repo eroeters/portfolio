@@ -10,6 +10,8 @@ body {
     overflow: hidden;
     padding-left: 10px;
     font-weight: bold;
+    position: fixed;
+    width: 100%;
 }
 
 .navbar a {
@@ -39,6 +41,7 @@ body {
     background-color: #264653;
     height: 33vh;
     color: #F0EDE5;
+    padding-top: 25px;
 }
 
 .aboutMeContent {
@@ -55,6 +58,13 @@ body {
     padding-left: 10px;
 }
 
+.main-content-left {
+    width: 25%;
+}
+
+.main-content-right {
+    width: 50%;
+}
 
 /* footer */
 .footer {
